@@ -6,58 +6,38 @@ namespace Calculator
     {
         public static void Main()
         {
-
-
-
             Console.WriteLine("Please enter your first number: ");
-            float firstNumber = float.Parse(Console.ReadLine());
+            int firstNumber = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Please enter your second number: ");
-            float secondNumber = float.Parse(Console.ReadLine());
+            int secondNumber = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("What would you like to do?: +, -, *, or /");
+            Console.WriteLine("What would you like to do?: add, subtract, multiply, or divide");
             string math = (Console.ReadLine());
 
-            float result = 0;
-
-            if (math == "+")
+            int result = 0;
+            
+            if (math == "add")
             {
                 result = firstNumber + secondNumber;
             }
-            if (math == "-")
+            if (math == "subtract")
             {
                 result = firstNumber - secondNumber;
             }
-            if (math == "*")
+            if (math == "multiply")
             {
                 result = firstNumber * secondNumber;
             }
-            if (math == "/")
+            if (math == "divide")
             {
-                result = firstNumber / secondNumber;
+                result = firstNumber / secondNumber;   
             }
 
-            Console.WriteLine($"The answer for your calculation is {result}");
+            Console.WriteLine(result);
+
             Console.ReadLine();
             
-        
-
-            
-            //Console.WriteLine($"Total = {result}");
-
-
-            
-            //char[] operators = new char[4];
-            
-
-            //converting string to number
-
-
-            // Create a simple calculator that asks the user to input two different numbers 
-            // and whether they want to add, subtract, multiply or divide them. 
-
-
-            //Console.ReadLine();
         }
     }
 }
